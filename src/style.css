@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+body {
+  font-family: "EuroStyle Normal", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geom Graphic W03 Regular Italic", sans-serif;
+}
+
+h2.bold {
+  font-family: "Geom Graphic W03 Bold Italic", sans-serif;
+}
+
+.hero-portrait {
+  transition: all 0.2s;
+}
+
+.hero-portrait:hover {
+  opacity: 0.75;
+  transform: scale(1.05);
+}

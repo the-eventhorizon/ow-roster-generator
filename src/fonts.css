@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Geom Graphic W03 Bold Italic";
+    src: url("assets/fonts/Geom Bold Italic/87a85c107e71ac58be186d8e5a2b6fd4.eot");
+    src: url("assets/fonts/Geom Bold Italic/87a85c107e71ac58be186d8e5a2b6fd4.eot?#iefix") format("embedded-opentype"),
+         url("assets/fonts/Geom Bold Italic/87a85c107e71ac58be186d8e5a2b6fd4.woff2") format("woff2"),
+         url("assets/fonts/Geom Bold Italic/87a85c107e71ac58be186d8e5a2b6fd4.woff") format("woff"),
+            url("assets/fonts/Geom Bold Italic/87a85c107e71ac58be186d8e5a2b6fd4.ttf") format("truetype"),
+            url("assets/fonts/Geom Bold Italic/87a85c107e71ac58be186d8e5a2b6fd4.svg#GeomGraphicW03BoldItalic") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "EuroStyle Normal";
+    src: url("assets/fonts/EuroStyle Normal/b6cf31d94e9b73923fa975d38485cf52.eot");
+    src: url("assets/fonts/EuroStyle Normal/b6cf31d94e9b73923fa975d38485cf52.eot?#iefix") format("embedded-opentype"),
+         url("assets/fonts/EuroStyle Normal/b6cf31d94e9b73923fa975d38485cf52.woff2") format("woff2"),
+         url("assets/fonts/EuroStyle Normal/b6cf31d94e9b73923fa975d38485cf52.woff") format("woff"),
+            url("assets/fonts/EuroStyle Normal/b6cf31d94e9b73923fa975d38485cf52.ttf") format("truetype"),
+            url("assets/fonts/EuroStyle Normal/b6cf31d94e9b73923fa975d38485cf52.svg#EuroStyleNormal") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "Geom Graphic W03 Regular";
+    src: url("assets/fonts/Geom Reg/b0b8a10e9c97391e66297c8b5398984f.eot");
+    src: url("assets/fonts/Geom Reg/b0b8a10e9c97391e66297c8b5398984f.eot?#iefix") format("embedded-opentype"),
+         url("assets/fonts/Geom Reg/b0b8a10e9c97391e66297c8b5398984f.woff2") format("woff2"),
+         url("assets/fonts/Geom Reg/b0b8a10e9c97391e66297c8b5398984f.woff") format("woff"),
+            url("assets/fonts/Geom Reg/b0b8a10e9c97391e66297c8b5398984f.ttf") format("truetype"),
+            url("assets/fonts/Geom Reg/b0b8a10e9c97391e66297c8b5398984f.svg#GeomGraphicW03Regular") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Geom Graphic W03 Regular Italic';
+    src: url("assets/fonts/Geom Reg Italic/5d96f18487dbfdf58c25bbd856415eb1.eot");
+    src: url("assets/fonts/Geom Reg Italic/5d96f18487dbfdf58c25bbd856415eb1.eot?#iefix") format("embedded-opentype"),
+         url("assets/fonts/Geom Reg Italic/5d96f18487dbfdf58c25bbd856415eb1.woff2") format("woff2"),
+         url("assets/fonts/Geom Reg Italic/5d96f18487dbfdf58c25bbd856415eb1.woff") format("woff"),
+            url("assets/fonts/Geom Reg Italic/5d96f18487dbfdf58c25bbd856415eb1.ttf") format("truetype"),
+            url("assets/fonts/Geom Reg Italic/5d96f18487dbfdf58c25bbd856415eb1.svg#GeomGraphicW03RegularItalic") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
