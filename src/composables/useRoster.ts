@@ -18,8 +18,10 @@ export function useRoster(): UseRosterReturn {
   const roles = ref<string[]>([
     'TANK',
     'HITSCAN DPS',
+    'HYBRID DPS',
     'FLEX DPS',
     'MAIN SUPPORT',
+    'HYBRID SUPPORT',
     'FLEX SUPPORT'
   ])
 

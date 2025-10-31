@@ -8,7 +8,7 @@ import { useHeroes } from './composables/useHeroes'
 import { useRoster } from './composables/useRoster'
 import type { Hero } from './types/hero'
 
-const { heroes, loading, heroesByRole } = useHeroes()
+const { loading, heroesByRole } = useHeroes()
 const {
   teamName,
   date,
@@ -45,7 +45,7 @@ const downloadImage = async (): Promise<void> => {
   <div class="min-h-screen p-8" style="background-color: #151515; color: #e5e5e5;">
     <div class="max-w-7xl mx-auto">
       <h1 class="text-4xl mb-8" style="color: #ff6700">
-        Overwatch Roster Generator
+        LES Roster Graphic Generator
       </h1>
 
       <SettingsPanel v-model:teamName="teamName" v-model:date="date" />
