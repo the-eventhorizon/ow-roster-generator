@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import * as domtoimage from 'dom-to-image-more'
-import type { Player, Hero } from '../types/hero'
+import type { Player } from '../types/hero'
 
 const props = defineProps<{
   teamName: string
@@ -69,7 +69,7 @@ defineExpose({
   <div
     ref="canvasRef"
     class="mx-auto"
-    style="width: 1920px; height: 1080px; background: linear-gradient(180deg, #151515, #ff6700); transform: scale(0.5); transform-origin: top center; margin-bottom: -540px; border: none; outline: none;"
+    style="width: 1920px; height: 1080px; background: linear-gradient(180deg, #151515, #ff6700); transform: scale(1); transform-origin: top center; margin-bottom: -540px; border: none; outline: none;"
   >
     <!-- Header -->
     <div class="pt-16 px-12" style="border: none;">
@@ -91,7 +91,7 @@ defineExpose({
     <div class="px-12 pt-12 h-[800px] flex flex-col gap-7" style="border: none;">
       <!-- Column Headers -->
       <div class="flex mb-8" style="padding-left: 200px; border: none;">
-        <div v-for="role in roles" :key="role" class="text-center flex items-end justify-center" style="width: 340px; color: #e5e5e5;">
+        <div v-for="role in roles.filter(r => !r.toLowerCase().includes('hybrid'))" :key="role" class="text-center flex items-end justify-center" style="width: 340px; color: #e5e5e5;">
           <div class="font-bold text-4xl flex justify-center gap-1 text-wrap flex-nowrap items-center">
             <img v-if="role.includes('TANK')" src="../assets/icons/roles/TankIcon.png" alt="Tank" class="w-20 h-18">
             <img v-if="role.includes('SUPPORT')" src="../assets/icons/roles/SupportIcon.png" alt="Support" class="w-20 h-18">
@@ -108,16 +108,20 @@ defineExpose({
         <div class="italic text-3xl font-bold" style="width: 200px; color: #e5e5e5;">
           {{ player.name.toUpperCase() }}
         </div>
-        <div v-for="role in roles" :key="role" class="flex justify-end gap-2 items-center" style="width: 340px;">
-          <img
-            v-for="(hero, hIndex) in player.heroes[role] || []"
-            :key="hIndex"
-            :src="generateImagePath(hero.key)"
-            :alt="hero.name"
-            class="important-border"
-            style="width: 50px; height: 50px; margin-right: 5px; border-radius: 10px; border: 1px solid #e5e5e5"
-          />
-        </div>
+          <div
+            style="display: flex; gap: 5px; border-radius: 12px; padding: 4px; align-items: center; border: 2px solid #ff6700"
+          >
+            <div v-for="role in roles" :key="role" >
+            <img
+              v-for="(hero, hIndex) in player.heroes[role] || []"
+              :key="hIndex"
+              :src="generateImagePath(hero.key)"
+              :alt="hero.name"
+              class="important-border"
+              style="width: 50px; height: 50px; border-radius: 10px; border: none;"
+            />
+            </div>
+          </div>
       </div>
     </div>
   </div>
