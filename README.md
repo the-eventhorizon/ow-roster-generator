@@ -17,6 +17,7 @@ A web app for building, customizing, and exporting Overwatch team rosters. Drag 
 ### Prerequisites
 - Node.js v20.19.0 or >=22.12.0
 - npm
+- Overwatch hero assets (not included due to copyright), put them in `src/assets/portraits/[hero-name-in-lower-kebab-case].png`
 
 ### Installation
 ```sh
