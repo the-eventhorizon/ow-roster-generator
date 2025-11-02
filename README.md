@@ -7,7 +7,7 @@ A web app for building, customizing, and exporting Overwatch team rosters. Drag 
 - **Hero Pool:** Select from all available Overwatch heroes, with portraits and custom fonts.
 - **Settings Panel:** Customize team name, date, and other options.
 - **Export:** Download your roster as a shareable image.
-- **Responsive UI:** Built with Vue 3, TailwindCSS, and Pinia for state management.
+- **Responsive UI:** Built with Vue 3, TailwindCSS, and dom-to-image-more.
 
 ## Demo
 ![App Screenshot](public/demo_screenshot.png)
